@@ -1,4 +1,6 @@
 class HomeScreen < ProMotion::GroupedTableScreen
+  title "ProMotion Tutorial"
+
   def table_data
     [{
       title: "ProMotion",
@@ -13,6 +15,22 @@ class HomeScreen < ProMotion::GroupedTableScreen
         { title: "Feedback", action: :feedback }
       ]
     }]
+  end
+
+  def about_promotion
+    open AboutProMotionScreen
+  end
+
+  def about_jamon
+    p "About Jamon tapped!"
+  end
+
+  def support
+    p "Support tapped!"
+  end
+
+  def feedback
+    p "Feedback tapped!"
   end
 end
 
